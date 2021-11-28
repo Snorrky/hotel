@@ -5,10 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <h1>Hello!</h1>
-    <h2>Everyone!</h2>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="img/logo/logo.svg" class="logo__img" alt="TOXIN">
+            </div>
+            <ul class="nav__items">
+                <li class="nav__item nav__item_active">О нас</li>
+                <li class="nav__item nav__item_dd">Услуги</li>
+                <li class="nav__item">Вакансии</li>
+                <li class="nav__item">Новости</li>
+                <li class="nav__item nav__item_dd">Соглашения</li>
+            </ul>
+            <div class="nav__btns logout">
+                <button class="btn btn_trnsp header__login">Войти</button>
+                <button class="btn btn_grad header__join">Зарегистрироваться</button>
+                <div class="header__user">Юлий Цезарь</div>
+            </div>
+        </nav>
+    </header>
+    <header class="header header_authorized">
+        <nav class="nav">
+            <div class="logo">
+                <img src="img/logo/logo.svg" class="logo__img" alt="TOXIN">
+            </div>
+            <ul class="nav__items">
+                <li class="nav__item nav__item_active">О нас</li>
+                <li class="nav__item nav__item_dd">Услуги</li>
+                <li class="nav__item">Вакансии</li>
+                <li class="nav__item">Новости</li>
+                <li class="nav__item nav__item_dd">Соглашения</li>
+            </ul>
+            <div class="nav__btns login">
+                <button class="btn btn_trnsp header__login">Войти</button>
+                <button class="btn btn_grad header__join">Зарегистрироваться</button>
+                <div class="header__user">Юлий Цезарь</div>
+            </div>
+        </nav>
+    </header>
+
+    <footer class="footer">
+        <div class="footer__info">
+            <div class="footer__about">
+                <div class="logo footer__logo">
+                    <img src="img/logo/logo.svg" class="logo__img" alt="TOXIN">
+                </div>
+                <div class="footer__text">
+                    Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+                </div>
+            </div>
+            <ul class="footer__nav">
+                <li class="caption">навигация</li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Новости</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Служба поддержки</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Услуги</a></li>
+            </ul>
+            <ul class="footer__nav">
+                <li class="caption">о нас</li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">О сервисе</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Наша команда</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Вакансии</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Инвесторы</a></li>
+            </ul>
+            <ul class="footer__nav">
+                <li class="caption">Служба поддержки</li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Соглашения</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Сообщества</a></li>
+                <li class="footer__nav-item"><a href="#" class="footer__nav-link">Связь с нами</a></li>
+            </ul>
+            <div class="footer__subscribe">
+                <div class="caption">подписка</div>
+                <div class="footer__text">
+                    Получайте специальные предложения и новости сервиса
+                </div>
+                <form action="" class="form footer__form">
+                    <input type="email" name="footer__email" id="footer__email" placeholder="E-mail" class="form__email">
+                    <button type="submit" class="form__submit">-></button>
+                </form>
+            </div>
+        </div>
+        <hr class="footer_hr">
+        <div class="footer__bottom">
+            <div class="footer__text">
+                Copyright © 2018 Toxin отель. Все права защищены.
+            </div>
+            <div class="social">
+                <a href="#" alt="twitter" class="social__item"><img src="img/icons/social/twitter.svg" alt="Twitter"></a>
+                <a href="#" alt="facebook" class="social__item"><img src="img/icons/social/facebook.svg" alt="Facebook"></a>
+                <a href="#" alt="instagram" class="social__item"><img src="img/icons/social/insta.svg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

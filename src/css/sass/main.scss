@@ -1,0 +1,25 @@
+@import '_variables';
+@import '_mixins';
+
+body, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: $back-gray;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1160px;
+}
+@import '_btn.scss';
+@import 'blocks/logo';
+
+@import 'blocks/_header';
+@import 'blocks/footer';

@@ -1,0 +1,22 @@
+.btn {
+    border-radius: 22px;
+    font-family: Montserrat;font-style: normal;
+    font-weight: bold;
+    font-size: $fz-h3;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+    width: 87px;
+    height: 34px;
+    border: $purple 2px solid;
+    margin: auto;
+    &_trnsp {
+        background: rgba(0,0,0,0);
+    }
+
+    &_grad {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        color: $white;
+    }
+}
+

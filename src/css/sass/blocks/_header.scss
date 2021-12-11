@@ -45,12 +45,15 @@
             font-weight: 700;
         }
         &_dd {
+            position: relative;
             &::after {
+                box-sizing: border-box;
+                display: inline-block;
                 content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
+                width: 24px;
+                padding: 3px;
                 background-image: url('../img/icons/expand_more.svg');
+                fill: rgba(31,32,65,.5);
             }
         }
     }
